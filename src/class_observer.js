@@ -1,3 +1,11 @@
+/*
+ * ClassObserver v0.0.1
+ * https://github.com/LFebruary/JSHelpers
+ *
+ * (c) 2024 LFebruary
+ * Released under the MIT License
+ */
+
 /**
  * Watches for changes in a specified class on a target node and triggers callbacks accordingly.
  */
