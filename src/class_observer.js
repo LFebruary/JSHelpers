@@ -1,9 +1,7 @@
 /*
- * ClassObserver v0.0.1
  * https://github.com/LFebruary/JSHelpers
  *
- * (c) 2024 LFebruary
- * Released under the MIT License
+ * (c) 2024 LFebruary - Released under the MIT License
  */
 
 /**
