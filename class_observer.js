@@ -44,7 +44,6 @@ class ClassObserver {
          * The last state of the target node's class.
          * @type {boolean}
          */
-        this.lastClassState = targetNode.classList.contains(this.classToWatch);
     }
 
     /**
@@ -59,7 +58,7 @@ class ClassObserver {
      * Starts observing changes.
      */
     observe() {
-        this.observer.observe(this.targetNode, { attributes: true })
+        this.observer.observe(this.target, { attributes: true })
     }
 
     /**
