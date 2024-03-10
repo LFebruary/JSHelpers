@@ -45,11 +45,6 @@ class ClassObserver {
      * @type {MutationObserver|null}
      */
     this.observer = null;
-
-    /**
-     * The last state of the target node's class.
-     * @type {boolean}
-     */
   }
 
   /**
@@ -58,6 +53,7 @@ class ClassObserver {
   init() {
     this.observer = new MutationObserver(this.mutationCallback);
     this.observe();
+    Object.freeze(this);
   }
 
   /**
