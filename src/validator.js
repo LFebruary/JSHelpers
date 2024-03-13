@@ -1,5 +1,5 @@
 /*
- * JSHelpers v0.0.10 https://github.com/LFebruary/JSHelpers
+ * JSHelpers v0.0.11 https://github.com/LFebruary/JSHelpers
  * (c) 2024 LFebruary - Released under the MIT License (https://github.com/LFebruary/JSHelpers/blob/master/LICENSE)
  */
 
