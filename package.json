@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint",
-    "postversion": "node update_doc_version.js"
+    "update-version": "node update_doc_version.js",
+    "prepend-block": "node prepend_block_script.js",
+    "postversion": "npm run update-version && npm run prepend-block"
   },
   "repository": "https://github.com/LFebruary/JSHelpers.git",
   "author": "Lyle February <lfebruary@icloud.com>",
