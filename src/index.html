@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input.error {
+            border-color: red;
+        }
+
+        input.valid {
+            border-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="field" />
+    <script src="./validator.js"></script>
+    <script type="text/javascript">
+        const validator = new Validator(
+            document.querySelector('#field'),
+            function (value) {
+                if (!value) {
+                    return 'Required';
+                }
+
+                if (value.length > 8) {
+                    return 'Text is too long.'
+                }
+            }, ['error'], ['valid']);
+    </script>
+</body>
+
+</html>

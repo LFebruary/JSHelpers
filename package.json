@@ -1,10 +1,11 @@
 {
   "name": "js_helpers",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A collection of useful JavaScript classes that can be used in various projects.",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint",
+    "postversion": "node update_doc_version.js"
   },
   "repository": "https://github.com/LFebruary/JSHelpers.git",
   "author": "Lyle February <lfebruary@icloud.com>",
