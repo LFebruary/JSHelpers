@@ -7,7 +7,7 @@
     "lint": "eslint",
     "update-version": "node update_doc_version.js",
     "prepend-block": "node prepend_block_script.js",
-    "postversion": "npm run prepend-block && npm run update-version && git add . && git commit -m \"Version bump to v$npm_package_version\""
+    "postversion": "npm run prepend-block && npm run update-version && git add . && git commit -m \"Version bump to v$npm_package_version\" && git tag -a v$npm_package_version -m 'Version $npm_package_version' && git push && git push --tags"
   },
   "repository": "https://github.com/LFebruary/JSHelpers.git",
   "author": "Lyle February <lfebruary@icloud.com>",
