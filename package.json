@@ -1,13 +1,13 @@
 {
   "name": "js_helpers",
-  "version": "0.0.13",
+  "version": "0.0.12",
   "description": "A collection of useful JavaScript classes that can be used in various projects.",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint",
     "update-version": "node update_doc_version.js",
     "prepend-block": "node prepend_block_script.js",
-    "postversion": "npm run prepend-block && npm run update-version && git add . && git commit -m 'Version bump to v$npm_package_version' && git push"
+    "postversion": "npm run prepend-block && npm run update-version && git add . && git commit -m \"Version bump to v$npm_package_version\""
   },
   "repository": "https://github.com/LFebruary/JSHelpers.git",
   "author": "Lyle February <lfebruary@icloud.com>",
